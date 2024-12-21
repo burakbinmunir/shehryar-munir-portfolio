@@ -26,29 +26,20 @@ export default function Page() {
                     user-friendly mobile applications.
                 </p>
                 <p>
-                    My experience spans both backend and frontend technologies, with notable contributions to projects
+                    My experience spans both backend and frontend technologies, with notable contributions to
+                    projects
                     like
                     the Classified Business CRM at
                     {" "}
+
                     <a
                         target="_blank"
                         href="https://www.dubizzlegroup.com/"
                     >
-                        <div style={{display: "flex", alignItems: "center"}}>
-                            <Image
-                                src="/dubizzle.png"
-                                alt="Profile photo"
-                                // className="rounded-3xl bg-gray-100 block lg:mt-5 mt-0 lg:mb-5 mb-10 mx-auto sm:float-right sm:ml-5 sm:mb-5 grayscale hover:grayscale-0"
-                                unoptimized
-                                width={30}
-                                height={30}
-                                priority
-                            />
-                            {" "}
-                            Dubizzle Group,
-                        </div>
+
+                        Dubizzle Group,
                     </a>
-                    where I enhanced user engagement and optimized performance.
+                    {" "}where I enhanced user engagement and optimized performance.
                 </p>
                 <p>
                     I am driven by a passion for creating seamless and impactful digital experiences.
