@@ -7,7 +7,6 @@ export const metadata: Metadata = {
     title: "Projects",
     description: "My Projects",
 };
-
 export default function Projects() {
     return (
         <section>
@@ -21,23 +20,26 @@ export default function Projects() {
                         rel="noopener noreferrer"
                         className="block group hover:opacity-80 transition-opacity duration-200"
                     >
-                        <div className="flex flex-col">
-                            <div className="w-full flex justify-between items-baseline">
-                                <div className={"flex items-center"}>
-                                    <span className="text-black dark:text-white font-medium tracking-tight">
-                                      {project.title}
-                                    </span>
-                                    <Image src={project?.imgUrl} alt={'Logo'} height={project?.height}
-                                           width={project?.width} className={'ml-4'}/>
-                                </div>
-                                <span className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm">
-                                    {project.year}
-                                 </span>
+                        <div className="flex flex-col sm:flex-row sm:justify-between">
+                            <div className="flex flex-col sm:flex-row sm:items-center">
+                                <span className="text-black dark:text-white font-medium tracking-tight">
+                                    {project.title}
+                                </span>
+                                <Image
+                                    src={project?.imgUrl}
+                                    alt="Logo"
+                                    height={project?.height}
+                                    width={project?.width}
+                                    className="mt-2 sm:ml-4 sm:mt-0"
+                                />
                             </div>
-                            <p className="prose prose-neutral dark:prose-invert pt-3">
-                                {project.description}
-                            </p>
+                            <span className="text-neutral-600 dark:text-neutral-400 tabular-nums text-sm sm:mt-0 mt-2">
+                                {project.year}
+                            </span>
                         </div>
+                        <p className="prose prose-neutral dark:prose-invert pt-3">
+                            {project.description}
+                        </p>
                     </a>
                 ))}
             </div>
