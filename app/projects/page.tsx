@@ -4,6 +4,9 @@ import {projects} from "./project-data";
 import Image from "next/image";
 import Jarvis from "./Jarvis/Jarvis";
 import EEG from "./EEG/EEG";
+import PneumoniaClassification from "./PneumoniaClassification/PneumoniaClassification";
+import Invictus from "./Invictus/Invictus";
+import FileCrypt from "./FileCrpyt/FileCrypt";
 
 export const metadata: Metadata = {
     title: "Projects",
@@ -17,6 +20,9 @@ export default function Projects() {
             <div className="space-y-6">
                 <Jarvis />
                 <EEG />
+                <Invictus />
+                <PneumoniaClassification />
+                <FileCrypt />
                 {/*{projects.map((project, index) => (*/}
                 {/*    <a*/}
                 {/*        key={index}*/}
