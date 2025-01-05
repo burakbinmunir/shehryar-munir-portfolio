@@ -31,3 +31,23 @@
         margin-bottom: 16px;
     }
 }
+
+.year {
+    display: block; /* Default visibility for larger screens */
+}
+
+@media (max-width: 640px) { /* Adjust breakpoint as needed */
+    .year {
+        display: none; /* Hide year on smaller screens */
+    }
+}
+
+.icon {
+    margin-left: 8px; /* Adjust spacing between title and icon */
+}
+
+@media (max-width: 640px) { /* Adjust breakpoint as needed */
+    .flex-row {
+        flex-wrap: nowrap; /* Prevent wrapping of items */
+    }
+}
