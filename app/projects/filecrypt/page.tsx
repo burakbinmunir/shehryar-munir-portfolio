@@ -3,7 +3,7 @@ import "../jarvis/jarvis.css";
 
 export default function FileCrypt() {
     const project = {
-        title: "File-Crypt – Information Security",
+        title: "FileCrypt – Information Security",
         year: "2022",
         descriptions: [
             "FileCrypt is a web app that provides a user-friendly interface for securely encrypting files using Advanced Encryption" +

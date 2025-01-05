@@ -67,7 +67,7 @@ export const projects: Project[] = [
 
     },
     {
-        title: "File-Crypt – Information Security",
+        title: "FileCrypt – Information Security",
         year: "2022",
         description:
             "File-Encryptor is a web app that provides a user-friendly interface for securely encrypting files using Advanced Encryption" +
