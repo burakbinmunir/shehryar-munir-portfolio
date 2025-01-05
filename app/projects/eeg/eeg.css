@@ -1,0 +1,53 @@
+.eeg-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Base styles for text and images */
+.eeg-container p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.eeg-container img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust layout for mobile screens */
+    .eeg-container .flex-wrap {
+        flex-direction: column;
+    }
+
+    .eeg-container img {
+        margin-bottom: 16px; /* Add spacing between text and images */
+    }
+
+    .eeg-container p {
+        text-align: center; /* Center-align text for a cleaner look */
+        margin-bottom: 16px;
+    }
+}
+
+.year {
+    display: block; /* Default visibility for larger screens */
+}
+
+@media (max-width: 640px) { /* Adjust breakpoint as needed */
+    .year {
+        display: none; /* Hide year on smaller screens */
+    }
+}
+
+.icon {
+    margin-left: 8px; /* Adjust spacing between title and icon */
+}
+
+@media (max-width: 640px) { /* Adjust breakpoint as needed */
+    .flex-row {
+        flex-wrap: nowrap; /* Prevent wrapping of items */
+    }
+}

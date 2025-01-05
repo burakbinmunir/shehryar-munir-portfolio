@@ -6,6 +6,8 @@ export interface Project {
     githubUrl: string;
     height: number;
     width: number;
+    imgArray: Array<string>;
+    detailPagePath: string;
 }
 
 export const projects: Project[] = [
@@ -14,13 +16,13 @@ export const projects: Project[] = [
         year: "2024 - Present",
         description:
             "Jarvis is a classified CRM (Customer Relationship Management) system used by Dubizzle Group," +
-            " which powers multiple platforms like Dubizzle, Bayut, and other associated brands within the group. " +
-            "It's designed to help businesses in the classified advertising industry efficiently manage customer interactions," +
-            " track leads, and improve sales performance.",
+            " which powers multiple platforms like Dubizzle, Bayut, and other associated brands within the group. " ,
         imgUrl: "/jarvis_logo.png",
         height: 50,
         width: 50,
-        githubUrl: ""
+        githubUrl: "",
+        imgArray: [  "jarvis_crm/crm_2.png", "jarvis_crm/crm_1.png","jarvis_crm/crm_3.png", "jarvis_crm/crm_4.png", "jarvis_crm/crm_7.png", "jarvis_crm/crm_8.png" ],
+        detailPagePath: "projects/jarvis"
     },
     {
         title: "Epileptic Seizure Prediction using EEG – Final Year Project",
@@ -32,29 +34,37 @@ export const projects: Project[] = [
         imgUrl: "/eeg_logo.png",
         height: 40,
         width: 40,
-        githubUrl: "https://github.com/burakbinmunir/Epileptic-Seizure-Prediction-Using-EEG-Recordings"
+        githubUrl: "https://github.com/burakbinmunir/Epileptic-Seizure-Prediction-Using-EEG-Recordings",
+        imgArray: ["eeg_prediction/eeg_1.jpg", "eeg_prediction/eeg_2.png", "eeg_prediction/eeg_3.png", "eeg_prediction/eeg_4.png", "eeg_prediction/eeg_5.png" ],
+        detailPagePath: "projects/eeg"
+
     },
     {
         title: "Invictus – Web Engineering",
         year: "2023",
         description:
             "Invictus is a knowledge sharing and discussion-oriented real-time web application designed for coding enthusiasts to connect" +
-            "and involve themselves within the worldwide developer community.",
+            " and involve themselves within the worldwide developer community.",
         imgUrl: "/invictus_logo.png",
         height: 150,
         width: 150,
-        githubUrl: "https://github.com/dark-coder12/Invictus"
+        githubUrl: "https://github.com/dark-coder12/Invictus",
+        imgArray: [ "invictus/invictus_1.png", "invictus/invictus_2.png", "invictus/invictus_3.png", "invictus/invictus_4.png", "invictus/invictus_5.png", "invictus/invictus_6.png" ],
+        detailPagePath: "projects/invictus"
+
     },
     {
-        title: "Multiclass Brain Tumor Classification using MRI – Artificial Intelligence",
+        title: "Pneumonia Chest Xray Classification – Artificial Intelligence",
         year: "2023",
         description:
-            "A custom EfficientNet model for image classification, integrating advanced data transformations and providing real-time" +
-            "predictions through a RESTful API.",
-        imgUrl: "/brain_tumor.png",
-        height: 40,
-        width: 40,
-        githubUrl: "https://github.com/dark-coder12/multiclass-brain-tumor-classification-using-mri"
+        "A fine-tuned InceptionResNetV2 model classifies chest X-ray images into normal and pneumonia categories, assisting healthcare professionals in early detection for improved diagnosis and patient outcomes.",
+        imgUrl: "/chest.jpeg",
+        height:20,
+        width: 20,
+        githubUrl: "https://github.com/dark-coder12/multiclass-brain-tumor-classification-using-mri",
+        imgArray: ["chest_xray_classification/chest_1.png","chest_xray_classification/chest_2.png", "chest_xray_classification/chest_3.png", "chest_xray_classification/chest_4.png"],
+        detailPagePath: "projects/pneumoniaclassification"
+
     },
     {
         title: "File-Crypt – Information Security",
@@ -65,7 +75,10 @@ export const projects: Project[] = [
         imgUrl: "/file_crypt_logo.png",
         height: 100,
         width: 100,
-        githubUrl: "https://github.com/burakbinmunir/File-Encryption"
+        githubUrl: "https://github.com/burakbinmunir/File-Encryption",
+        imgArray: ["file_crypt/file_1.png", "file_crypt/file_2.png", "file_crypt/file_3.png","file_crypt/file_4.png"],
+        detailPagePath: "projects/filecrypt"
+
     },
 
 ];
