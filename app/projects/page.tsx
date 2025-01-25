@@ -21,9 +21,7 @@ export default function Projects() {
                         className="block group hover:opacity-80 transition-opacity duration-200"
                     >
                         <div
-                            className={`bg-gradient-to-bl from-gray-800 to-gray p-6 rounded-lg shadow-xl 
-                            hover:shadow-2xl transition-shadow duration-300 
-                            group-hover:translate-y-[-10px] group-hover:cursor-pointer
+                            className={` p-6 rounded-lg shadow-xl 
                             group-active:scale-95 group-active:transition-transform group-active:duration-150`}
                         >
                             <div className="flex flex-col sm:flex-row sm:justify-between">
